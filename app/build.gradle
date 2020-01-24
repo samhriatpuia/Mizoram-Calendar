@@ -1,5 +1,9 @@
 apply plugin: 'com.android.application'
 
+
+/*alian: key0
+* password: MSeGS!#11
+* the private key : in git hub or this folder itself*/
 android {
     compileSdkVersion 29
     defaultConfig {
