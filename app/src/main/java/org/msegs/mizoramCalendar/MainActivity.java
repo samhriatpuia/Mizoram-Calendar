@@ -48,10 +48,6 @@ public class MainActivity extends AppCompatActivity {
         Date date = new Date();
         Log.d("Month",dateFormat.format(date));
 
-
-
-
-
         viewPager = (ViewPager) findViewById(R.id.view_pager);
         ImageAdapter adapter = new ImageAdapter(this);
         viewPager.setAdapter(adapter);
