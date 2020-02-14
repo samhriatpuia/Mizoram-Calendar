@@ -19,7 +19,7 @@ public class ImageAdapter extends PagerAdapter {
             R.drawable.may,
             R.drawable.jun,
             R.drawable.jul,
-            R.drawable.aug_new,
+            R.drawable.aug,
             R.drawable.sep,
             R.drawable.oct,
             R.drawable.nov,
