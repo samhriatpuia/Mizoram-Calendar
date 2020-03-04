@@ -26,8 +26,6 @@ public class ImageAdapter extends PagerAdapter {
             R.drawable.oct,
             R.drawable.nov,
             R.drawable.dec
-
-
     };
 
     LayoutInflater mLayoutInflater;
