@@ -10,18 +10,10 @@ android:id="@+id/jan">
 
 
 
-
-<!--    <com.applandeo.materialcalendarview.CalendarView-->
-<!--        android:id="@+id/calendarView"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent" />-->
-
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/view_pager"/>
 
-<!--    <CalendarView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"/>-->
+
 </LinearLayout>

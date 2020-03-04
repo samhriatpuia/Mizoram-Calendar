@@ -4,28 +4,23 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.CalendarView;
-import android.widget.LinearLayout;
-import android.widget.Toast;
+
 
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
+
 import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
-    LinearLayout jan;
+
 
     ViewPager viewPager;
 
@@ -48,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         Date date = new Date();
         Log.d("Month",dateFormat.format(date));
 
-        viewPager = (ViewPager) findViewById(R.id.view_pager);
+        viewPager = findViewById(R.id.view_pager);
         ImageAdapter adapter = new ImageAdapter(this);
         viewPager.setAdapter(adapter);
         viewPager.setOffscreenPageLimit(11);

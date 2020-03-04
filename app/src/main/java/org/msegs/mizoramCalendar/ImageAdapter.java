@@ -9,6 +9,8 @@ import android.widget.LinearLayout;
 
 import androidx.viewpager.widget.PagerAdapter;
 
+import com.jsibbold.zoomage.ZoomageView;
+
 public class ImageAdapter extends PagerAdapter {
     Context context;
     private int[] GalImages = new int[] {
@@ -41,14 +43,14 @@ public class ImageAdapter extends PagerAdapter {
 
     @Override
     public boolean isViewFromObject(View view, Object object) {
-        return view == ((LinearLayout) object);
+        return view == object;
     }
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         View itemView = mLayoutInflater.inflate(R.layout.pager_item, container, false);
 
-        ImageView imageView = (ImageView) itemView.findViewById(R.id.imageView);
+        ZoomageView imageView = itemView.findViewById(R.id.imageView);
         imageView.setImageResource(GalImages[position]);
 
         container.addView(itemView);
